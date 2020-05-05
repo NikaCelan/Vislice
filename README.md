@@ -1,5 +1,5 @@
 # Vislice
 
-Borut Pahor
+Ivan Vidav
 Jurij Vega
 Josip Plemelj
