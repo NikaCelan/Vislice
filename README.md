@@ -2,4 +2,4 @@
 
 Ivan Vidav
 Jurij Vega
-Josip Plemelj
+Borut Pahor
