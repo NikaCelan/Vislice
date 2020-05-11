@@ -12,7 +12,7 @@ PORAZ = 'X'
 
 
 bazen_besed = []
-with open('Vislice/besede.txt') as datoteka_bazena:
+with open('Vislice/besede.txt', encoding='UTF-8') as datoteka_bazena:
     for beseda in datoteka_bazena:
         bazen_besed.append(beseda.strip().lower())
 class Igra:
@@ -49,7 +49,7 @@ class Igra:
         return self.stevilo_napak() > STEVILO_DOVOLJENIH_NAPAK
 
     def napravilni_ugibi(self):
-        return ' '.join(self.napavne_crke())
+        return ' '.join(self.napacne_crke())
 
     def pravilni_del_gesla(self):
         trenutno = ''
@@ -58,6 +58,7 @@ class Igra:
                 trenutno += crka
             else:
                 trenutno += '_'
+        return trenutno
     
     def ugibaj(self, ugibana_crka):
         ugibana_crka = ugibana_crka.lower()
