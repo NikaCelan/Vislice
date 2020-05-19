@@ -6,7 +6,7 @@ def izpis_poraz(igra):
     return f'IZGUBIL SI, geslo je bilo : {igra.geslo}'
 
 def izpis_zmage(igra):
-    return f'ČESTITM, ZMAGAL SI. Potreboval si {len(igra.napacne_crke())} ugibov'
+    return f'ČESTITM, ZMAGAL SI. Porabil si {len(igra.napacne_crke())} napačnih ugibov'
 
 def izpis_igre(igra):
     text = (
